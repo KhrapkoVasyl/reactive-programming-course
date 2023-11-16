@@ -45,10 +45,6 @@ export class SumDirective {
     });
   }
 
-  ngOnInit() {
-    this.refreshViewWithResultValue();
-  }
-
   private addNumbers() {
     return this._firstNumber + this._secondNumber;
   }
