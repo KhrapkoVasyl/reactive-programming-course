@@ -8,7 +8,6 @@ import { FormsModule } from '@angular/forms';
 @NgModule({
   imports: [BrowserModule, FormsModule],
   declarations: [AppComponent, ValueDirective],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

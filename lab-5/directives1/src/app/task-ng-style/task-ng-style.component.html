@@ -1,15 +1,4 @@
 <!-- Part 1 (with [ngStyle]) -->
-<div [ngClass]="{ verdanaFont: isVerdana }">
-  <h1>Hello Angular</h1>
-  <p [ngClass]="{ segoePrintFont: isSegoe }">
-    Angular представляє модульну архітектуру додатку
-  </p>
-</div>
-<div [ngClass]="currentClasses">
-  <h1>Hello Angular</h1>
-  <p>Angular представляє модульну архітектуру додатку</p>
-</div>
-
 <div
   [ngStyle]="{ 'font-size': '13px', 'font-family': 'Verdana', color: 'green' }"
 >
@@ -20,9 +9,9 @@
 </div>
 
 <!-- Part 2 (with style object prop, e.g. [style.fontFamily]) -->
-<!-- <div [style.fontSize]="'13px'" [style.fontFamily]="'Verdana'">
+<div [style.fontSize]="'13px'" [style.fontFamily]="'Verdana'">
   <h1>Hello Angular 16</h1>
   <p [style.fontSize]="'14px'" [style.fontFamily]="'Segoe Print'">
     Angular 16 представляет модульную архитектуру приложения
   </p>
-</div> -->
+</div>

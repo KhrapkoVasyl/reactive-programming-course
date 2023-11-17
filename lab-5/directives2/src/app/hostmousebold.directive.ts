@@ -5,11 +5,16 @@ import { Directive, ElementRef, Renderer2 } from '@angular/core';
   host: {
     '(mouseenter)': 'onMouseEnter()',
     '(mouseleave)': 'onMouseLeave()',
+    '[style.cursor]': 'getCursor()',
   },
 })
 export class HostmouseboldDirective {
   constructor(private element: ElementRef, private renderer: Renderer2) {
-    this.renderer.setStyle(this.element.nativeElement, 'cursor', 'pointer');
+    // this.renderer.setStyle(this.element.nativeElement, 'cursor', 'pointer');
+  }
+
+  getCursor() {
+    return 'pointer';
   }
 
   onMouseEnter() {
