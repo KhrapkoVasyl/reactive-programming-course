@@ -22,10 +22,6 @@ export class ProductRepository {
     );
   }
 
-  getProduct(id: number): Product | undefined {
-    return this.products.find((p) => p.id === id);
-  }
-
   getCategories(): string[] {
     return this.categories;
   }
