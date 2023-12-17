@@ -8,6 +8,7 @@ import { CartSummaryComponent } from './cart-summary/cart-summary.component';
 import { CartDetailComponent } from './cart-detail/cart-detail.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { RouterModule } from '@angular/router';
+import { StoreHeaderComponent } from './store-header/store-header.component';
 
 @NgModule({
   imports: [ModelModule, BrowserModule, FormsModule, RouterModule],
@@ -17,6 +18,7 @@ import { RouterModule } from '@angular/router';
     CartSummaryComponent,
     CartDetailComponent,
     CheckoutComponent,
+    StoreHeaderComponent,
   ],
   exports: [StoreComponent, CartDetailComponent, CheckoutComponent],
 })
